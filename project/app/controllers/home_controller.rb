@@ -122,6 +122,11 @@ class HomeController < ApplicationController
 
   end
 
+  def accommodation
+    @important_dates = ImportantDate.all.sort_by &:date
+
+  end
+
   def contact_us
     @response= session[:response]
 
