@@ -26,9 +26,22 @@
   height: auto;
 }
 
-section#publication, section#steeringcommittee, section#technicalprogramcommittee, section#advisorycommittee, section#download{
+section#publication, section#steeringcommittee,section#speakers, section#technicalprogramcommittee, section#advisorycommittee, section#download{
   .card{
     height: auto;
     text-align: left;
+  }
+
+  .card em{
+    font-family: cursive;
+  }
+  .speaker{
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    border-radius: 0%;
+  }
+  .card img{
+    max-width : 100%
   }
 }
