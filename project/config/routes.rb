@@ -26,6 +26,9 @@ Rails.application.routes.draw do
   get '/poster_symposium' => "home#poster_symposium"
   get '/awards' => "home#awards"
   get '/accommodation' => "home#accommodation"
+  get '/icicc_2018' => "home#icicc_2018"
+  get '/icicc_2019' => "home#icicc_2019"
+  get '/icicc_2020' => "home#icicc_2020"
   get '/speakers' => "home#speakers"
   # get '/contact_us' => "home#contact_us"
   # post 'home/contact_us/post' => 'home#contact_us_post'
