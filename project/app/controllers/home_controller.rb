@@ -132,6 +132,18 @@ class HomeController < ApplicationController
 
   end
 
+  def icicc_2020
+    @important_dates = ImportantDate.all.sort_by &:date
+  end
+
+  def icicc_2019
+    @important_dates = ImportantDate.all.sort_by &:date
+  end
+
+  def icicc_2018
+    @important_dates = ImportantDate.all.sort_by &:date
+  end
+
   def contact_us
     @response= session[:response]
 
