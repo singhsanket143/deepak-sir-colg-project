@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/about_institute' => "home#about_institute"
   get '/downloads_page' => "home#downloads_page"
   get '/call_for_special_sessions' => 'home#call_for_special_sessions'
+  get '/call_for_international_workshops' => 'home#call_for_international_workshops'
   get '/special_session' => 'home#call_for_special_sessions'
   get '/call_for_poster_paper' => 'home#call_for_poster_paper'
   get '/new_special_session' => 'home#special_session'
