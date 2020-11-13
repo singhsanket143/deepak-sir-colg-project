@@ -1,33 +1,41 @@
-    <div class="col-md-12 left">
-      <h1>Supported By</h1>
-    </div>
-    <div class="col-md-12 right">
+<div class=" col-md-12 left ">
+<h1>Supported By</h1>
+</div>
+
+<div class=" col-md-12 right ">
+
+<div class="slick-publishing">
+  <div class="outer_div_slick">
+    <div class="images-key-note"><img src="https://universal-inovators.com/static/media/srgelogo.15991ae2.png" style="max-width : 100%" alt="axure"></div>
+    <div> <h6>SCIENTIFIC RESEARCH GROUP IN EGYPT (SRGE)</h6></div>
+  </div>
+
+  <div class="outer_div_slick">
+    <div class="images-key-note"><img src="https://universal-inovators.com/static/media/setitlogo.f7cb305d.png" style="max-width : 100%"></div>
+    <div> <h6>SCIENCES OF ELECTRONICS, TECHNOLOGIES OF INFORMATION & TELECOMMUNICATIONS (SETIT) , TUNISIA</h6></div>
+  </div>
+
+  <div class="outer_div_slick">
+    <div class="images-key-note"><img src="https://universal-inovators.com/static/media/thinklogo.7736c151.jpeg" style="max-width : 100%"></div>
+    <div> <h6>Think Pariyawaran</h6></div>
+  </div>
+
+  <div class="outer_div_slick">
+    <div class="images-key-note"><img src="https://universal-inovators.com/static/media/sgrtlogo.bf7ad37a.jpeg" style="max-width : 100%"></div>
+    <div> <h6>SCIENTIFIC GROUP FOR RESEARCH AND TECHNOLOGY</h6></div>
+  </div>
+
+</div>
 
 
-      <div class="slick-sponsors">
-        <% @sponsors.each do |sponsors| %>
-        <div class="outer_div_slick">
-          <div class="images-key-note">  <img src="<%="/sponsors/" + sponsors.image%>" ></div>
-          <div class="link-key-note"><%= sponsors.caption %></div>
-        </div>
-        <% end %>
-
-
-
-      </div>
-
-
-
-
-      <script type="text/javascript">
-      $(document).ready(function(){
-        $('.slick-sponsors').slick({
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          autoplay: true,
-          autoplaySpeed: 2500
-        });
-      });
-      </script>
-
-    </div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.slick-publishing').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500
+  });
+});
+</script>
+</div>
