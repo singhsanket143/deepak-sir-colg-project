@@ -1,21 +1,28 @@
-<div class="card">
-  <div class="card-header">
-    Future Generation Intelligent Systems for Biomedical Applications
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">WORKSHOP ORGANIZERS: </h5>
-    <p class="card-text">Dr. Utku Kose / Suleyman Demirel University / Turkey / <a href="#">utkukose@sdu.edu.tr</a> </p>
-    <a href="/workshops/1" class="btn btn-primary">Read more...</a>
-  </div>
-</div>
 
-<div class="card">
-  <div class="card-header">
-    Future Generation Intelligent Systems for Biomedical Applications
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">WORKSHOP ORGANIZERS: </h5>
-    <p class="card-text">Dr. Utku Kose / Suleyman Demirel University / Turkey / <a href="#">utkukose@sdu.edu.tr</a> </p>
-    <a href="/workshops/2" class="btn btn-primary">Read more...</a>
-  </div>
+<div class="sub-page">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>INTERNATIONAL WORKSHOPS ON</h1>
+            <hr>
+            <div class="left">
+                
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box left">
+                <h1 class="custom-font">Important Dates</h1>
+                <hr>
+                <marquee behavior="" direction="up"  truespeed="true" scrolldelay = "150" onmouseover="this.stop();" onmouseout="this.start();" >
+                    <% @important_dates.each do |impdate| %>
+                        <b><%= impdate.title %></b>
+                        <br>
+                        <%= impdate.date.to_date.to_formatted_s(:long_ordinal) %>
+                        <br><hr />
+
+                    <% end %>
+                </marquee>
+                <span> <a href="/important_dates">Read More...</a> </span>
+            </div>
+        </div>
+    </div>
 </div>
