@@ -32,7 +32,7 @@ Rails.application.routes.draw do
   get '/icicc_2020' => "home#icicc_2020"
   get '/speakers' => "home#speakers"
   get '/workshops'   => "workshops#index"
-  get '/workshops/1'   => "workshops#1"
+  get '/workshops/1'   => "workshops#one"
   # get '/contact_us' => "home#contact_us"
   # post 'home/contact_us/post' => 'home#contact_us_post'
   # get '/special_submission' => "home#special_submission"
