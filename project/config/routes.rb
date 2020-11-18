@@ -31,6 +31,8 @@ Rails.application.routes.draw do
   get '/icicc_2019' => "home#icicc_2019"
   get '/icicc_2020' => "home#icicc_2020"
   get '/speakers' => "home#speakers"
+  get '/workshops'   => "workshops#index"
+  get '/workshops/1'   => "workshops#1"
   # get '/contact_us' => "home#contact_us"
   # post 'home/contact_us/post' => 'home#contact_us_post'
   # get '/special_submission' => "home#special_submission"
