@@ -1,3 +1,57 @@
-<div>
-Hello world
-</div>
+
+<section class="sub-page" id="about_institute">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="left">
+                <div class="card">
+                    <div class="card-header">
+                        Future Generation Intelligent Systems for Biomedical Applications
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">WORKSHOP ORGANIZERS: </h5>
+                        <p class="card-text">
+                            Dr. Utku Kose, Suleyman Demirel University, Turkey <br> 
+                            <a href="#">utkukose@sdu.edu.tr</a>
+                        </p>
+                        <a href="/workshops/1" class="btn btn-primary">Read more...</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Sustainable Heterogeneous Energy-Aware Systems for Next Generation Devices and Networks
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">WORKSHOP ORGANIZERS: </h5>
+                        <p class="card-text">
+                            1) Mazin Abed Mohammed, Ph.D. College of Computer Science and Information Technology, University of Anbar, Iraq. <br>
+                            <a href="#">mazinalshujeary@uoanbar.edu.iq</a>
+                            
+                            2) Korhan Cengiz, PhD, SMIEE Department of Electrical-Electronics Engineering Trakya University, 22030, Edirne, Turkey
+                            <a href="#">korhancengiz@ieee.org</a>
+                            
+                            3) Dr. Mashael S. Maashi, PhD. Software Engineering Department, College of Computer and Information Sciences, King Saud University; Saudi Arabia.
+                            <a href="#">mmaashi@ksu.edu.sa</a>
+                        </p>
+                        <a href="/workshops/2" class="btn btn-primary">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box left">
+                <h1 class="custom-font">Important Dates</h1>
+                <hr>
+                <marquee behavior="" direction="up"  truespeed="true" scrolldelay = "150" onmouseover="this.stop();" onmouseout="this.start();" >
+                    <% @important_dates.each do |impdate| %>
+                        <b><%= impdate.title %></b>
+                        <br>
+                        <%= impdate.date.to_date.to_formatted_s(:long_ordinal) %>
+                        <br><hr />
+
+                    <% end %>
+                </marquee>
+                <span> <a href="/important_dates">Read More...</a> </span>
+            </div>
+        </div>
+    </div>
+</section>

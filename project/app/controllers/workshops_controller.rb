@@ -7,4 +7,8 @@ class WorkshopsController < ApplicationController
         @important_dates = ImportantDate.all.sort_by &:date
     
     end
+    def two
+        @important_dates = ImportantDate.all.sort_by &:date
+    
+    end
 end
