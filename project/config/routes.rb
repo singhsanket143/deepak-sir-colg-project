@@ -34,6 +34,7 @@ Rails.application.routes.draw do
   get '/workshops'   => "workshops#index"
   get '/workshops/1'   => "workshops#one"
   get '/workshops/2'   => "workshops#two"
+  get '/workshops/3'   => "workshops#three"
   # get '/contact_us' => "home#contact_us"
   # post 'home/contact_us/post' => 'home#contact_us_post'
   # get '/special_submission' => "home#special_submission"
